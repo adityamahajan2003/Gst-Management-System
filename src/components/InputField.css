@@ -1,0 +1,34 @@
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.input-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}

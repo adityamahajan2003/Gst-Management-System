@@ -1,0 +1,46 @@
+.pending-approval-card {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 220px;
+  cursor: pointer;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px;
+}
+
+.avatars img:first-child {
+  margin-left: 0;
+}
+
+.more {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f00000, #b52f2f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-left: -10px;
+  border: 2px solid white;
+}

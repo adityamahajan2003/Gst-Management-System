@@ -1,0 +1,52 @@
+.verification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fdfcff;
+  padding: 20px;
+}
+
+.verification-box {
+  background: #f4edff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.icon-circle {
+  background: #7e4bff;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-message {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.verify-btn {
+  margin-top: 20px;
+  background: #7e4bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.verify-btn:hover {
+  background: #5e38cc;
+}

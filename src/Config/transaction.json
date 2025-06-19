@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Ananya Sharma",
+    "date": "23/07/24",
+    "time": "5 pm",
+    "amount": "2000 rs",
+    "status": "Succeeded"
+  },
+  {
+    "name": "Pankaj Sahu",
+    "date": "23/07/24",
+    "time": "4:58 pm",
+    "amount": "4500 rs",
+    "status": "Succeeded"
+  },
+  {
+    "name": "ABC",
+    "date": "23/07/24",
+    "time": "4:15 pm",
+    "amount": "4000 rs",
+    "status": "Succeeded"
+  }
+]

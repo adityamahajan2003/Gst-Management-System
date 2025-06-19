@@ -1,0 +1,170 @@
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-left,
+.login-right {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.login-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-right {
+  max-width: 500px;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+  font-size: 1em;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.login-right p {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #8e44fd;
+  color: white;
+  padding: 10px;
+  height: 60px;
+  max-width: 315px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #732dce;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.register {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    max-width: 100%;
+  }
+
+  .illustration {
+    max-width: 400px;
+  }
+
+  .logo {
+    max-width: 150px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-left {
+    order: 2;
+  }
+
+  .login-right {
+    order: 1;
+    padding: 0 10px;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .input-group {
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .illustration {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 120px;
+    top: 10px;
+    left: 10px;
+  }
+}

@@ -1,0 +1,60 @@
+.requests-container {
+  padding: 20px;
+}
+
+.requests-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.requests-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.requests-table th,
+.requests-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.accept-btn {
+  background-color: #28a745; /* green */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.decline-btn {
+  background-color: #dc3545; /* red */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+}
+
+.decline-btn:hover {
+  background-color: #c82333;
+}

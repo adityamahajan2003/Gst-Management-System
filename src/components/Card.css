@@ -1,0 +1,15 @@
+.card {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-value {
+  font-size: 20px;
+  margin-top: 10px;
+}

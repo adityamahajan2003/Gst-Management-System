@@ -1,0 +1,26 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.report-btn {
+  background: #333;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+}

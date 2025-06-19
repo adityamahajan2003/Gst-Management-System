@@ -1,0 +1,22 @@
+.sidebar {
+  background: #7c3aed;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+  width: 250px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: 40px;
+  cursor: pointer;
+}
