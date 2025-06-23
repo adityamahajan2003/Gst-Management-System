@@ -4,6 +4,7 @@ import Logo from './Logo';
 
 const Topbar = () => {
   return (
+    <> 
     <header className="topbar">
       <Logo />
       <input type="text" placeholder="Search" className="search-bar" />
@@ -13,6 +14,7 @@ const Topbar = () => {
         <button className="report-btn">View Report</button>
       </div>
     </header>
+    </>
   );
 };
 

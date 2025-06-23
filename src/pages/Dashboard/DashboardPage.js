@@ -12,7 +12,7 @@ import PendingApproval from '../../components/PendingApproval';
 const DashboardPage = () => {
   return (
     <>
-        <Topbar />
+      <Topbar />
     <div className="dashboard-container">
       <Sidebar />
       <main className="dashboard-content">

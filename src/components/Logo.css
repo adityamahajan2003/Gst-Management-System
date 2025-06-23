@@ -1,5 +1,8 @@
-.logo {
+.logoImg {
   max-width: 200px;
-  top: 20px;
-  left: 20px;
+}
+.logo-flex{
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }

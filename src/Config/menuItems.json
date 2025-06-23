@@ -1,0 +1,11 @@
+[
+  { "id": 1, "text": "Dashboard", "icon": "dashboard" },
+  { "id": 2, "text": "Client Management", "icon": "clientmanagement" },
+  { "id": 3, "text": "Document Management", "icon": "dm" },
+  { "id": 4, "text": "GST Filing", "icon": "GstF" },
+  { "id": 5, "text": "Quotation & Invoice", "icon": "QF" },
+  { "id": 6, "text": "Payment", "icon": "pay" },
+  { "id": 7, "text": "Report", "icon": "rep" },
+  { "id": 8, "text": "Support", "icon": "Supp" },
+  { "id": 9, "text": "Setting", "icon": "set" }
+]

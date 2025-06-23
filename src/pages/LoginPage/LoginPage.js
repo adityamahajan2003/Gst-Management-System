@@ -19,7 +19,9 @@ const LoginPage = () => {
 
   return (
     <>
-    < Logo/> 
+    <div className='logo'>
+    < Logo/>
+    </div> 
     <div className="login-container"> 
       <div className="login-left">
         <img src={loginpageimg} alt="Login Illustration" className="illustration" />

@@ -8,45 +8,43 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Form Section */
+/* Container size control */
 .left-section {
   width: 100%;
-  max-width: 480px;
-  padding: 20px;
+  max-width: 600px; /* slightly smaller than before */
+  padding: 15px; /* tighter padding */
 }
 
-/* Headings */
+/* Headings smaller */
 .left-section h1 {
-  font-size: 1.9rem;
-  font-weight: 600;
+  font-size: 1.5rem;
   margin-bottom: 4px;
 }
 
 .left-section p {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 25px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
 }
 
-/* Rows */
+/* Rows tighter */
 .row {
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 12px;
+  margin-bottom: 10px; /* tighter rows */
 }
 
 .row > * {
   flex: 1;
 }
 
-/* Inputs & Selects */
+/* Minimal inline input & select style */
 input,
 select {
   width: 100%;
-  font-size: 0.95rem;
-  padding: 8px 4px;
+  font-size: 0.85rem;
+  padding: 6px 2px;
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1.5px solid #aaa;
   background: transparent;
   outline: none;
   transition: border-color 0.2s;
@@ -57,96 +55,68 @@ select:focus {
   border-bottom-color: #7e4bff;
 }
 
-/* Purple styled select (custom style class) */
-.select-purple {
-  background-color: #f2ebff;
-  border-radius: 999px;
-  padding: 6px 14px;
-  border: none;
-  font-size: 0.95rem;
-  color: #000;
-}
-
-/* Gender buttons */
+/* Gender options */
 .gender-options {
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .gender-options label {
-  background-color: #f5f5f5;
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-size: 0.85rem;
   cursor: pointer;
-  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  gap: 6px;
-}
-
-.gender-options input[type="radio"] {
-  accent-color: #7e4bff;
+  gap: 5px;
 }
 
 /* DOB dropdowns */
 .dob-selector {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
-/* Checkbox */
+/* Checkbox group */
 .checkbox-group {
   display: flex;
   align-items: center;
-  font-size: 0.85rem;
-  margin: 15px 0;
+  font-size: 0.8rem;
+  margin: 10px 0;
 }
 
 .checkbox-group input[type="checkbox"] {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
-.checkbox-group a {
-  color: #7e4bff;
-  text-decoration: none;
-}
-
-.checkbox-group a:hover {
-  text-decoration: underline;
-}
-
-/* Submit Button */
+/* Submit button compact */
 .submit-btn {
   width: 100%;
-  padding: 12px 0;
+  padding: 10px 0;
   background: #7e4bff;
   color: white;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.9rem;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .submit-btn:hover {
   background: #6836e0;
 }
 
-/* Login link */
+/* Login link compact */
 .login-link {
   text-align: center;
-  margin-top: 15px;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  font-size: 0.8rem;
 }
 
 .login-link a {
   color: #7e4bff;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .login-link a:hover {
@@ -161,18 +131,17 @@ select:focus {
   }
 }
 
-
 /* Right section (optional) */
 .right-section {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
 }
 
 .right-section img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   object-fit: contain;
 }

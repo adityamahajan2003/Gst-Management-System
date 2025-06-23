@@ -3,8 +3,8 @@ import "./Logo.css";
 
 const Logo = () => {
   return (
-    <div className='login-topleft'>
-        <img src={logo} alt="Company Logo" className='logo'/>
+    <div className='logo-flex'>
+        <img src={logo} alt="Company Logo" className='logoImg'/>
       </div> 
   );
 };

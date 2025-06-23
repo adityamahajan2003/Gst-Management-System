@@ -1,22 +1,60 @@
+/* Sidebar container */
 .sidebar {
-  background: #7c3aed;
+  background: #7c3aed; /* Purple background */
   color: #fff;
   padding: 20px;
+  padding-right: 0;
   min-height: 100vh;
   width: 250px;
 }
 
+/* Remove default list styles */
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
+/* Sidebar items */
+/* Make list items flex for icon + text */
 .sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icon and text */
   margin-bottom: 20px;
   cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 8px 0 0 8px;
+  transition: background 0.3s;
 }
 
+.sidebar li img.sidebar-icon {
+  width: 20px;  /* adjust size as needed */
+  height: 20px;
+}
+
+
+/* Hover effect for all items */
+.sidebar li:hover {
+  background: #8b5cf6; /* Slightly lighter purple on hover */
+}
+
+/* Active item style */
+.sidebar li.active {
+  background: #fff;
+  color: #7c3aed; /* Light purple background for active */
+}
+
+/* Logout button at bottom */
 .logout {
   margin-top: 40px;
   cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+/* Optional: Hover for logout */
+.logout:hover {
+  background: #8b5cf6;
 }
