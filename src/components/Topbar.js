@@ -1,19 +1,29 @@
 import React from 'react';
 import './Topbar.css';
 import Logo from './Logo';
+import search from '../assets/Topbar/search.png';
+import viewreport from '../assets/Topbar/viewreport.png';
+import notification from '../assets/Topbar/notification.png';
+import message from '../assets/Topbar/message.png';
 
 const Topbar = () => {
   return (
     <> 
-    <header className="topbar">
-      <Logo />
-      <input type="text" placeholder="Search" className="search-bar" />
-      <div className="icons">
-        <span>🔔</span>
-        <span>💬</span>
-        <button className="report-btn">View Report</button>
-      </div>
-    </header>
+      <header className="topbar">
+        <Logo />
+        <div className="search-bar">
+          <img src={search} alt="Search" className="search-icon" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div className="icons">
+          <img src={notification} alt="Notification" className="icon-img" />
+          <img src={message} alt="Message" className="icon-img" />
+          <button className="report-btn">
+            <img src={viewreport} alt="View Report" className="report-icon" />
+            View Report
+          </button>
+        </div>
+      </header>
     </>
   );
 };

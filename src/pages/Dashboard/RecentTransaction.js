@@ -1,9 +1,10 @@
 import React from "react";
-import transactions from "../../Config/transaction.json"; 
+import "./RecentTransaction.css";
+import transactions from "../../Config/transaction.json";
 
 const RecentTransactions = () => {
   return (
-    <div>
+    <div className="recent-transactions-container">
       <h2>Recent Transactions</h2>
       <table>
         <thead>
@@ -22,7 +23,7 @@ const RecentTransactions = () => {
               <td>{tx.date}</td>
               <td>{tx.time}</td>
               <td>{tx.amount}</td>
-              <td style={{ color: tx.status === "Succeeded" ? "green" : "red" }}>
+              <td className={`status ${tx.status.toLowerCase()}`}>
                 {tx.status}
               </td>
             </tr>

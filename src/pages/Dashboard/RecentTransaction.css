@@ -1,0 +1,59 @@
+.recent-transactions-container {
+  padding: 20px 24px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 100%; 
+  margin: 0; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+.recent-transactions-container h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #222;
+}
+.recent-transactions-container table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+.recent-transactions-container thead th {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.recent-transactions-container tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+  color: #333;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recent-transactions-container .profile {
+  display: flex;
+  align-items: center;
+}
+.recent-transactions-container .profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.recent-transactions-container .status {
+  font-weight: 600;
+}
+.recent-transactions-container .status.succeeded {
+  color: #28a745;
+}
+.recent-transactions-container .status.failed {
+  color: #dc3545;
+}

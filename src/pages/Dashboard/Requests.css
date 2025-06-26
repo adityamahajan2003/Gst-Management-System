@@ -33,7 +33,7 @@
 }
 
 .accept-btn {
-  background-color: #28a745; /* green */
+  background-color: #28a745;
   border: none;
   color: white;
   padding: 6px 12px;
@@ -43,7 +43,7 @@
 }
 
 .decline-btn {
-  background-color: #dc3545; /* red */
+  background-color: #dc3545; 
   border: none;
   color: white;
   padding: 6px 12px;
@@ -57,4 +57,22 @@
 
 .decline-btn:hover {
   background-color: #c82333;
+}
+.requests-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
 }

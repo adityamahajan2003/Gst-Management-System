@@ -4,23 +4,51 @@
   align-items: center;
   padding: 20px;
 }
-
 .search-bar {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f4eeff; 
+  border-radius: 999px;
+  padding: 6px 14px;
+  width: 250px;
 }
-
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #7f3ffb;
+  width: 100%;
+}
+.search-icon {
+  width: 16px;
+  height: 16px;
+}
 .icons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
+.icon-img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 .report-btn {
   background: #333;
   color: white;
   padding: 8px 15px;
   border: none;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
 }
+.report-icon {
+  width: 16px;
+  height: 16px;
+}
+

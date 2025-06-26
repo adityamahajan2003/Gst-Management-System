@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-
-// ✅ Import JSON
 import sidebarItems from '../Config/menuItems.json';
-
-// ✅ Import all icons as an object
 import dashboard from '../assets/Sidebar/dashboard.png';
 import clientmanagement from '../assets/Sidebar/cm.png';
 import dm from '../assets/Sidebar/Dm.png';
@@ -14,6 +10,7 @@ import pay from '../assets/Sidebar/pay.png';
 import rep from '../assets/Sidebar/rep.png';
 import Supp from '../assets/Sidebar/Supp.png';
 import set from '../assets/Sidebar/set.png';
+import logout from '../assets/Sidebar/logout.png';
 
 const iconMap = {
   dashboard,
@@ -25,9 +22,10 @@ const iconMap = {
   rep,
   Supp,
   set,
+  logout,
 };
 
-const Sidebar = () => {
+const Sidebar = ({ onLogout }) => {
   const [activeItem, setActiveItem] = useState('Dashboard');
 
   const handleItemClick = (itemText) => {
@@ -54,7 +52,10 @@ const Sidebar = () => {
           ))}
         </ul>
       </nav>
-      <div className="logout">Log out</div>
+      <div className="logout" onClick={onLogout} style={{ cursor: 'pointer' }}>
+        <img src={logout} alt="Logout" className="sidebar-icon" />
+        <span>Log out</span>
+      </div>
     </aside>
   );
 };

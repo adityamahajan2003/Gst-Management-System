@@ -1,16 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./PendingApproval.css"; // We'll write this next
+import "./PendingApproval.css"; 
 
 const PendingApproval = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/requests");
-  };
-
   return (
-    <div className="pending-approval-card" onClick={handleClick}>
+    <div className="pending-approval-card" >
       <div className="card-header">
         <span>Pending Approval</span>
         <span className="dots">⋯</span>

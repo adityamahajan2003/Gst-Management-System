@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import OTPInput from '../../components/OTPInput';
 import './VerificationPage.css';
-import { ReactComponent as ShieldIcon } from '../../assets/shield.svg'; // Or use an emoji/icon
+import { ReactComponent as ShieldIcon } from '../../assets/shield.svg';
 
 const VerificationPage = () => {
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
+  const navigate = useNavigate();
 
   const handleVerify = () => {
     const otpCode = otp.join('');
     if (otpCode.length === 6) {
       alert(`Verifying OTP: ${otpCode}`);
-      // Handle real verification logic
+      navigate('/'); 
     } else {
       alert('Please enter the full OTP');
     }

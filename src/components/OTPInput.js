@@ -7,7 +7,6 @@ const OTPInput = ({ value, onChange }) => {
     updated[index] = e.target.value.slice(0, 1);
     onChange(updated);
 
-    // Auto-focus next input
     if (e.target.nextSibling && e.target.value) {
       e.target.nextSibling.focus();
     }

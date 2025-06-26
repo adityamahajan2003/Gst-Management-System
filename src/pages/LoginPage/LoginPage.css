@@ -108,7 +108,6 @@
   margin-top: 15px;
 }
 
-/* Tablets */
 @media (max-width: 992px) {
   .login-container {
     flex-direction: column;
@@ -130,7 +129,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 576px) {
   .login-container {
     padding: 10px;

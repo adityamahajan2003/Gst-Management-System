@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './RegistrationPage.css';
 import illustration from '../../assets/registration-illustration.png';
 import InputField from '../../components/InputField';
@@ -8,6 +9,8 @@ import Button from '../../components/Button';
 import Logo from '../../components/Logo';
 
 const RegistrationPage = () => {
+  const navigate = useNavigate(); 
+
   const [formData, setFormData] = useState({
     firstName: '', lastName: '', gender: '', dob: { day: '', month: '', year: '' },
     email: '', phone: '', address: '', city: '', state: '', specialization: '',
@@ -24,6 +27,7 @@ const RegistrationPage = () => {
     if (formData.agree) {
       console.log(formData);
       alert('Registered!');
+      navigate('/');
     } else {
       alert('Please agree to Terms');
     }
@@ -32,8 +36,9 @@ const RegistrationPage = () => {
   return (
     <>
       <div className='logo'>
-    < Logo/>
-    </div> 
+        <Logo />
+      </div>
+
       <div className="registration-container">
         <div className="left-section">
           <h1>Create Account</h1>
@@ -54,23 +59,11 @@ const RegistrationPage = () => {
 
           <div className="gender-options">
             <label>
-              <input
-                type="radio"
-                name="gender"
-                value="Male"
-                checked={formData.gender === "Male"}
-                onChange={handleChange}
-              />
+              <input type="radio" name="gender" value="Male" checked={formData.gender === "Male"} onChange={handleChange} />
               Male
             </label>
             <label>
-              <input
-                type="radio"
-                name="gender"
-                value="Female"
-                checked={formData.gender === "Female"}
-                onChange={handleChange}
-              />
+              <input type="radio" name="gender" value="Female" checked={formData.gender === "Female"} onChange={handleChange} />
               Female
             </label>
           </div>
@@ -121,7 +114,10 @@ const RegistrationPage = () => {
 
           <Button text="Submit" onClick={handleSubmit} className="submit-btn" />
 
-          <p className="login-link">Already have an account? <a href="/login">Login</a></p>
+          <p className="login-link">
+            Already have an account?{' '}
+            <span className="login-btn" onClick={() => navigate('/')}>Login</span>
+          </p>
         </div>
 
         <div className="right-section">

@@ -1,18 +1,16 @@
-/* Container to hold charts in a row */
 .charts-row {
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* reduced gap for closer charts */
+  gap: 10px; 
   flex-wrap: nowrap;
 }
 
-/* Updated chart styles: wider width, same height */
 .chart {
   text-align: center;
   flex: 1;
-  max-width: 400px;  /* increased max width for wider charts */
-  min-width: fit-content;  /* increased minimum width */
-  height: 250px;     /* same height for uniformity */
+  max-width: 400px;  
+  min-width: fit-content;  
+  height: 250px;     
   display: flex;
   align-items: center;
   justify-content: center;
