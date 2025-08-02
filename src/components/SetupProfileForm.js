@@ -1,10 +1,7 @@
 import React, { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom"; 
 import "./SetupProfileForm.css";
 
-const SetupProfileForm = () => {
-  const navigate = useNavigate(); 
-
+const SetupProfileForm = ({ onSave = () => {} }) => {
   const [formData, setFormData] = useState({
     name: "Anuj Verma",
     id: "@anujvermaa664",
@@ -39,7 +36,7 @@ const SetupProfileForm = () => {
     console.log("Form Data:", formData);
     console.log("Profile Photo:", profilePhoto);
 
-    navigate("/dashboard");
+    onSave();
   };
 
   return (
@@ -61,15 +58,37 @@ const SetupProfileForm = () => {
       </div>
 
       <form onSubmit={handleSubmit}>
-        <label>Name <input name="name" value={formData.name} onChange={handleChange} /></label>
-        <label>Id <input name="id" value={formData.id} onChange={handleChange} /></label>
-        <label>Bio <input name="bio" value={formData.bio} onChange={handleChange} /></label>
-        <label>Fees <input name="fees" value={formData.fees} onChange={handleChange} /></label>
-        <label>Experience <input name="experience" value={formData.experience} onChange={handleChange} /></label>
-        <label>Language <input name="language" value={formData.language} onChange={handleChange} /></label>
+        <label>
+          Name
+          <input name="name" value={formData.name} onChange={handleChange} />
+        </label>
+        <label>
+          Id
+          <input name="id" value={formData.id} onChange={handleChange} />
+        </label>
+        <label>
+          Bio
+          <input name="bio" value={formData.bio} onChange={handleChange} />
+        </label>
+        <label>
+          Fees
+          <input name="fees" value={formData.fees} onChange={handleChange} />
+        </label>
+        <label>
+          Experience
+          <input name="experience" value={formData.experience} onChange={handleChange} />
+        </label>
+        <label>
+          Language
+          <input name="language" value={formData.language} onChange={handleChange} />
+        </label>
 
-        <button type="button" className="upload-btn">⬆️ Upload Certifications</button>
-        <button type="submit" className="save-btn">Save</button>
+        <button type="button" className="upload-btn">
+          ⬆️ Upload Certifications
+        </button>
+        <button type="submit" className="save-btn">
+          Save
+        </button>
       </form>
     </div>
   );

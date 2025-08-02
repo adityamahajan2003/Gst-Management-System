@@ -1,0 +1,75 @@
+.history-panel-container {
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c2a1e;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #5a3e2c;
+  text-decoration: underline;
+}
+
+.month-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #888;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.history-table thead {
+  background-color: #fafafa;
+}
+
+.history-table th,
+.history-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+}
+
+.status-tag.paid {
+  background-color: #22c55e;
+}
+
+.status-tag.unpaid {
+  background-color: #ef4444;
+}
+
+.action-icons {
+  cursor: pointer;
+  font-size: 16px;
+}

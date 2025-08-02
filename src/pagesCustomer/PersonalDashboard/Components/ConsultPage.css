@@ -1,0 +1,162 @@
+.consult-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.consult-sidebar {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.back-btn {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.consult-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.consult-name {
+  color: #7f3dd2;
+  margin: 0;
+}
+
+.consult-handle {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.consult-info {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.consult-info p {
+  margin-bottom: 15px;
+}
+
+.consult-chat {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-small {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.online-status {
+  font-size: 12px;
+  color: green;
+}
+
+.chat-actions {
+  font-size: 20px;
+  cursor: default;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-left, .msg-right {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.msg-left {
+  background-color: #b792f0;
+  color: white;
+  align-self: flex-start;
+}
+
+.msg-right {
+  background-color: #444;
+  color: white;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.payment-box {
+  background-color: #d9bffb;
+  color: black;
+}
+
+.payment-box .pay-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #30c45b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 0 15px;
+  border: none;
+  background-color: #7f3dd2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

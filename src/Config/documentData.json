@@ -1,0 +1,93 @@
+[
+  {
+    "fileName": "Abc",
+    "type": "Sale",
+    "size": "1.2 Mb",
+    "uploadedDate": "28 July 2024",
+    "owner": "Zoya Khan"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Sale",
+    "size": "1.2 Mb",
+    "uploadedDate": "28 July 2024",
+    "owner": "Zoya Khan"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Purchase",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Investment",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Sale",
+    "size": "1.2 Mb",
+    "uploadedDate": "28 July 2024",
+    "owner": "Zoya Khan"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Investment",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Investment",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Purchase",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Sale",
+    "size": "1.2 Mb",
+    "uploadedDate": "28 July 2024",
+    "owner": "Zoya Khan"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Purchase",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Sale",
+    "size": "1.2 Mb",
+    "uploadedDate": "28 July 2024",
+    "owner": "Zoya Khan"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Investment",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  },
+  {
+    "fileName": "Abc",
+    "type": "Investment",
+    "size": "340 kb",
+    "uploadedDate": "23 July 2024",
+    "owner": "Shubham Sharma"
+  }
+]

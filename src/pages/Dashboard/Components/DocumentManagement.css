@@ -1,0 +1,296 @@
+.document-management {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.document-management .storage-box {
+  background: #EEEDED;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.document-management .legend {
+  margin: 20px 0px 20px 20px;
+}
+
+.document-management .bar {
+  height: 10px;
+  background: #e5e5e5;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  margin: 0px 15px 0px 15px;
+}
+
+.document-management .tab {
+  background: none;
+  border: none;
+}
+
+.document-management .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.document-management .brown {
+  background: #3b2f2f;
+}
+
+.document-management .purple {
+  background: #a855f7;
+}
+
+.document-management .green {
+  background: #22c55e;
+}
+
+.document-management .dot.brown {
+  background: #3b2f2f;
+}
+
+.document-management .dot.purple {
+  background: #a855f7;
+}
+
+.document-management .dot.green {
+  background: #22c55e;
+}
+
+.document-management .doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+  min-width: 600px;
+}
+
+.document-management .doc-table th,
+.document-management .doc-table td {
+  text-align: left;
+  padding: 12px 16px;
+  vertical-align: middle;
+}
+
+.document-management .doc-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #111827;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.document-management .doc-table tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.document-management .doc-table .actions svg {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.document-management .owner-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+}
+
+.document-management .filters-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+
+.document-management .filter-btn,
+.document-management .export-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.document-management .filter-btn {
+  background: #f3f4f6;
+  color: #333;
+}
+
+.document-management .export-btn {
+  background: #561F37;
+  color: white;
+}
+
+.document-management .tabs .tab {
+  font-weight: 600;
+  color: #3b2f2f;
+  padding: 10px 16px;
+  border: none;
+  background-color: transparent;
+  border-radius: 9999px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.document-management .tabs .tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 60%;
+  height: 2px;
+  background-color: #3b2f2f;
+  border-radius: 1px;
+}
+
+.document-management .filter-export {
+  display: flex;
+  gap: 12px;
+}
+
+.document-management .filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #858585;
+  border: 1px solid #858585;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-management .filter-btn .icon {
+  font-size: 14px;
+}
+
+.document-management .filter-btn .arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.document-management .export-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #561f37;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.document-management .export-btn .icon {
+  font-size: 14px;
+}
+
+/* ✅ Updated Document Type Tag - Text Color Only */
+.document-management .tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 4px 8px;
+  color: #333;
+}
+
+.document-management .tag.sale {
+  color: #7EBE2C;
+}
+
+.document-management .tag.purchase {
+  color: #E54646;
+}
+
+.document-management .tag.investment {
+  color: #0080F6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .document-management .doc-table {
+    font-size: 14px;
+  }
+
+  .document-management .doc-table th,
+  .document-management .doc-table td {
+    padding: 10px 12px;
+  }
+
+  .document-management .filter-btn,
+  .document-management .export-btn {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+
+  .document-management .owner-avatar {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .document-management {
+    padding: 15px 10px;
+  }
+
+  .document-management .legend {
+    margin: 15px 0px 15px 10px;
+  }
+
+  .document-management .tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .document-management .tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .document-management .filters-tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .document-management .filter-btn,
+  .document-management .export-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .document-management .doc-table {
+    min-width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .document-management .doc-table th,
+  .document-management .doc-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .document-management .owner-avatar {
+    width: 25px;
+    height: 25px;
+  }
+}

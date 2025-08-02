@@ -1,0 +1,72 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-title {
+  color: #888;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.modal-text {
+  font-size: 0.92rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal-text strong {
+  color: #222;
+  font-weight: 600;
+}
+
+.modal-text span {
+  color: #4b2aad;
+  font-weight: 500;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cancel-btn {
+  flex: 1;
+  border: 1.5px solid #a855f7;
+  background: transparent;
+  color: #a855f7;
+  padding: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.confirm-btn {
+  flex: 1;
+  background: #a855f7;
+  color: white;
+  border: none;
+  padding: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}

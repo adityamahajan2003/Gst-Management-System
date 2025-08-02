@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import './LoginPage.css';
 import InputField from '../../components/InputField';
-import Button from '../../components/Button';
 import loginpageimg from '../../assets/LoginPage.png';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../../components/Logo';
-
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -13,47 +11,73 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    console.log('Login with:', { email, password });
-    navigate('/setup');
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (!user) {
+      alert('User not found. Please register.');
+      return;
+    }
+
+    if (email === user.email && password === user.password) {
+      switch (user.role) {
+        case 'admin':
+          navigate('/dashboard');
+          break;
+        case 'customer_personal':
+          navigate('/customer/personal-dashboard');
+          break;
+        case 'customer_business':
+          navigate('/customer/business-dashboard');
+          break;
+        default:
+          alert('Unknown role');
+      }
+    } else {
+      alert('Invalid email or password');
+    }
   };
 
   return (
     <>
-    <div className='logo'>
-    < Logo/>
-    </div> 
-    <div className="login-container"> 
-      <div className="login-left">
-        <img src={loginpageimg} alt="Login Illustration" className="illustration" />
+      <div className='logo'>
+        <Logo />
       </div>
-      <div className="login-right">
-        <h1 className='title'>Hello</h1>
-        <p>To keep connected with us please login</p>
-        <InputField
-          type="email"
-          placeholder="Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <InputField
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <div className="options">
-          <label>
-            <input type="checkbox" /> Remember
-          </label>
-          <a href="/forgot">Forgot password?</a>
+      <div className="login-container">
+        <div className="login-left">
+          <img src={loginpageimg} alt="Login Illustration" className="illustration" />
         </div>
-        <div className='login-btn'>
-        <Button text="Login" onClick={handleLogin} />
+        <div className="login-right">
+          <h1 className='title'>Hello</h1>
+          <p>To keep connected with us please login</p>
+
+          <InputField
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <InputField
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          <div className="options">
+            <label>
+              <input type="checkbox" /> Remember
+            </label>
+            <a href="/forgot">Forgot password?</a>
+          </div>
+
+          <div className='login-btn'>
+            <button className="btn" onClick={handleLogin}>Login</button>
+          </div>
+
+          <p className="register">Don’t have an account? <a href="/register">Register</a></p>
         </div>
-        <p className="register">Don’t have an account? <a href="/register">Register</a></p>
       </div>
-    </div>
-  </>
+    </>
   );
 };
 

@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Pending",
+    "avatar": "/avatar1.jpg"
+  },
+  
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Pending",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Pending",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Zoya Khan",
+    "quotationNo": "1234567",
+    "issueDate": "24 May,2024",
+    "dueDate": "24 June,2024",
+    "amount": "xxxx",
+    "status": "Accepted",
+    "avatar": "/avatar1.jpg"
+  }
+]

@@ -1,0 +1,138 @@
+.quotation-preview-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.quotation-preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Removed max-height and overflow-y to disable internal scroll */
+  padding: 20px;
+}
+
+.preview-header {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preview-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.preview-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quotation-box {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  /* Removed overflow-y: auto to disable internal scroll */
+}
+
+.quotation-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.company-details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.company-logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.quote-meta {
+  text-align: right;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.section-label {
+  color: white;
+  padding: 8px 12px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.section-body {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.quotation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.quotation-table th,
+.quotation-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.totals-section {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.grand-total {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.convert-btn {
+  background-color: #453823 !important; /* ensure background is applied */
+  color: #fff !important; /* change to white for better visibility */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 246px;
+  margin: 20px 0 0 auto; /* aligns right */
+  display: block;
+}
+
+

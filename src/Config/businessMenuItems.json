@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "Dashboard",
+    "icon": "dashboard"
+  },
+  {
+    "id": 2,
+    "text": "GST Filing",
+    "icon": "GstF"
+  },
+  {
+    "id": 3,
+    "text": "Clients",
+    "icon": "clientmanagement"
+  },
+  {
+    "id": 4,
+    "text": "Invoices",
+    "icon": "dm"
+  },
+  {
+    "id": 5,
+    "text": "Support",
+    "icon": "Supp"
+  },
+  {
+    "id": 6,
+    "text": "Settings",
+    "icon": "set"
+  }
+]

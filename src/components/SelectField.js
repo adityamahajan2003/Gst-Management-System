@@ -1,14 +1,15 @@
 import React from 'react';
+import './SelectField.css';
 
 const SelectField = ({ label, options, value, onChange, name }) => (
-  <div className="form-group">
-    <label>{label}</label>
-    <select value={value} onChange={onChange} name={name} required>
-      <option value="">Select</option>
-      {options.map((opt, i) => (
-        <option key={i} value={opt}>{opt}</option>
-      ))}
-    </select>
+  <div className="select-field-inline">
+    <label htmlFor={name}>{label}</label>
+  <select name={name} value={value} onChange={onChange}>
+    <option value="">Select</option>
+    {options.map((option) => (
+      <option key={option} value={option}>{option}</option>
+    ))}
+  </select>
   </div>
 );
 

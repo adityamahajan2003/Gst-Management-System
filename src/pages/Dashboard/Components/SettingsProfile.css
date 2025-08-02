@@ -1,0 +1,308 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.settings-page {
+  font-family: 'Inter', sans-serif;
+  padding: 40px 60px;
+  background: #f7f9fc;
+  color: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.tabs-pill-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.tabs-pill {
+  display: inline-flex;
+  border: 1px solid #8A4FFF;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pill-tab {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  color: #6c5ce7;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-right: 1px solid #8A4FFF;
+  white-space: nowrap;
+}
+
+.pill-tab:last-child {
+  border-right: none;
+}
+
+.pill-tab:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pill-tab:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pill-tab.active {
+  background-color: #8A4FFF;
+  color: white;
+}
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.avatar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ddd;
+  margin-bottom: 6px;
+}
+
+.change-photo {
+  font-size: 12px;
+  color: #6c5ce7;
+  border: 1px solid #6c5ce7;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: white;
+  transition: background 0.2s ease;
+  width: auto;
+}
+
+.change-photo:hover {
+  background: #f0eaff;
+}
+
+.edit-btn {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.profile-form {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.form-left,
+.form-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group.horizontal {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  width: 140px;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #8A4FFF;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.upload-preview {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-placeholder,
+.img-add {
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.save-button {
+  background: #8A4FFF;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* === Responsive Breakpoints === */
+
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 20px 30px;
+  }
+
+  .page-heading {
+    font-size: 24px;
+  }
+
+  .avatar-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .change-photo {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .form-left,
+  .form-right {
+    min-width: 100%;
+  }
+
+  .form-group.horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    width: 100%;
+  }
+
+  .tabs {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .settings-page {
+    padding: 15px 20px;
+  }
+
+  .page-heading {
+    font-size: 20px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-info h2 {
+    font-size: 18px;
+  }
+
+  .profile-info p {
+    font-size: 12px;
+  }
+
+  .avatar-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .change-photo {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .edit-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .save-button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+}

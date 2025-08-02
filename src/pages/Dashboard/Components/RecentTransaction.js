@@ -1,6 +1,6 @@
 import React from "react";
 import "./RecentTransaction.css";
-import transactions from "../../Config/transaction.json";
+import transactions from "../../../Config/transaction.json";
 
 const RecentTransactions = () => {
   return (

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "Dashboard",
+    "icon": "dashboard"
+  },
+  {
+    "id": 2,
+    "text": "Income Tax Filing",
+    "icon": "GstF"
+  },
+  {
+    "id": 3,
+    "text": "Tax Consultant",
+    "icon": "clientmanagement"
+  },
+  {
+    "id": 4,
+    "text": "Document",
+    "icon": "dm"
+  },
+  {
+    "id": 5,
+    "text": "Support",
+    "icon": "Supp"
+  },
+  {
+    "id": 6,
+    "text": "Setting",
+    "icon": "set"
+  }
+]

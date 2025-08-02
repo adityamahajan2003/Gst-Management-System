@@ -1,0 +1,288 @@
+.incomeTaxContainer {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header Banner (no change here) */
+.headerBanner {
+  background-color: #f3efff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: visible;
+}
+
+.headerContent {
+  flex: 1;
+}
+
+.headerContent h2 {
+  font-size: 1.7rem;
+  color: #6a1b9a;
+  margin: 0 0 0.4rem;
+}
+
+.headerContent p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.headerImage {
+  position: absolute;
+  top: -30px;
+  right: -60px;
+}
+
+.headerImage img {
+  max-width: 200px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .headerBanner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .headerImage {
+    position: static;
+    margin-top: 1rem;
+  }
+}
+
+/* ==== Form Section Styling ==== */
+.formSection {
+  padding-left: 10px;
+  max-width: 950px;
+  overflow: visible;
+}
+
+.stepTitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.financialYear {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.5rem;
+  margin-top: 5px;
+}
+
+.subheading {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+/* Stepper */
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  margin-bottom: 2rem;
+}
+
+.step {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 10px;
+  background-color: #fff;
+  color: #555;
+}
+
+.step span {
+  display: block;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.active {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+/* Form Blocks */
+.formBlock {
+  margin-bottom: 1rem;
+}
+
+.sectionLabel {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ageGroup {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ageGroup label {
+  flex: 1 1 5px;
+}
+
+.badge {
+  background-color: #d500f9;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.lightNote {
+  font-size: 12px;
+  color: #888;
+  margin-left: 6px;
+}
+
+.formError {
+  color: red;
+  font-size: 14px;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.buttonRow {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.nextButton {
+  background-color: #6a1b9a;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nextButton:hover {
+  background-color: #5a1480;
+}
+.incomeForm {
+  margin-top: 1rem;
+}
+
+.incomeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.incomeGrid label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.incomeGrid input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #b285f2;
+  border-radius: 6px;
+  outline: none;
+  color: #333;
+}
+
+.incomeGrid input:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 0 0 1px #6a1b9a33;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+  margin-left: 4px;
+}.incomeForm {
+  margin-top: 1rem;
+}
+
+.incomeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2rem;
+}
+
+.incomeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.incomeRow label {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.incomeRow input {
+  flex: 2;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #b285f2;
+  border-radius: 6px;
+  outline: none;
+  color: #333;
+}
+
+.incomeRow input:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 0 0 1px #6a1b9a33;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+  margin-left: 4px;
+}
+
+/* Back Button */
+.backButton {
+  background: #fff;
+  color: #6a1b9a;
+  border: 1px solid #b285f2;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.backButton:hover {
+  background-color: #f5edff;
+  border-color: #6a1b9a;
+}

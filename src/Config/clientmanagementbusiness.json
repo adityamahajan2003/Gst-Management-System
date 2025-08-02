@@ -1,0 +1,114 @@
+[
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "businessId": "@boldbrewcoffee",
+    "businessName": "Bold Brew Coffee",
+    "email": "boldbrewcoffee@gmail.com",
+    "businessType": "Coffee Shop",
+    "lastLogin": "5 hours ago",
+    "joined": "May, 2023"
+  },
+  {
+    "tabs": ["Business", "Client"],
+    "heading": "Team members",
+    "filterButton": "Filters",
+    "addBusinessButton": "Add Business",
+    "tableHeaders": [
+      "Business Id",
+      "Business Name",
+      "Email",
+      "Business Type",
+      "Last Login",
+      "Joined",
+      ""
+    ],
+    "viewProfile": "View Profile"
+  }
+]

@@ -1,0 +1,254 @@
+.client-management-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+/* ===== Tabs ===== */
+.client-tabs {
+  display: inline-flex;
+  border: 1px solid #8a4fff;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0;
+  width: auto;
+  max-width: max-content;
+  margin-bottom: 16px;
+}
+
+.client-tab {
+  font-size: 14px;
+  background: white;
+  color: #8a4fff;
+  padding: 6px 14px;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.client-tab:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid #8a4fff;
+  padding: 8px 20px;
+  background: white;
+  color: #8b5cf6;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+}
+
+.client-tab:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.client-tab.active {
+  background: #8a4fff;
+  color: white;
+}
+
+/* ===== Header Section ===== */
+.header-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== Actions ===== */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.add-business-button {
+  background: #75334b;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ===== Table ===== */
+.table-wrapper {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.team-table th,
+.team-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.business-id {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  background: #3d5a80;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.view-profile-button {
+  border: 1px solid #8a4fff;
+  color: #8a4fff;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.view-profile-button:hover {
+  background: #8a4fff;
+  color: white;
+}
+
+/* ===== Empty State ===== */
+.team-table td[colspan] {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  padding: 20px;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 16px;
+  }
+
+  .client-tab {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .filter-button,
+  .add-business-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .team-table th,
+  .team-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .profile-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+
+  .view-profile-button {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .client-tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .client-tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filter-button,
+  .add-business-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .team-table {
+    min-width: 100%;
+  }
+
+  .team-table th,
+  .team-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .profile-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .view-profile-button {
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+  }
+}
+.client-management-container .client-filter-btn {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #858585;
+  border: 1px solid #858585;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

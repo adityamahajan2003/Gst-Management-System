@@ -2,14 +2,12 @@
   padding: 20px;
 }
 
-.requests-container h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
 .requests-table {
   width: 100%;
   border-collapse: collapse;
+}
+.requests-table th{
+  font-weight: 600;
 }
 
 .requests-table th,
@@ -61,7 +59,11 @@
 .requests-header {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+  color: #453823;
 }
 
 .back-button {
@@ -70,7 +72,7 @@
   color: #333;
   font-size: 16px;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 6px 10px;
 }
 
 .back-button:hover {

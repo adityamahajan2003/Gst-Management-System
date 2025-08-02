@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Sales",
+    "amount": "xxxx",
+    "status": "Paid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Sales",
+    "amount": "xxxx",
+    "status": "Paid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Purchase",
+    "amount": "xxxx",
+    "status": "Unpaid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Sales",
+    "amount": "xxxx",
+    "status": "Paid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Purchase",
+    "amount": "xxxx",
+    "status": "Unpaid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Sales",
+    "amount": "xxxx",
+    "status": "Paid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Sales",
+    "amount": "xxxx",
+    "status": "Paid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Sales",
+    "amount": "xxxx",
+    "status": "Paid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Purchase",
+    "amount": "xxxx",
+    "status": "Unpaid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Sales",
+    "amount": "xxxx",
+    "status": "Paid",
+    "avatar": "/path-to-avatar.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Zoya Khan",
+    "invoiceId": "8FB24538-00001",
+    "date": "24 May,2024",
+    "type": "Purchase",
+    "amount": "xxxx",
+    "status": "Unpaid",
+    "avatar": "/path-to-avatar.jpg"
+  }
+]

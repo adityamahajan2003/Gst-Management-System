@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-import sidebarItems from '../Config/menuItems.json';
+import defaultMenuItems from '../Config/menuItems.json';
+import personalMenuItems from '../Config/personalMenuItems.json';
+import businessMenuItems from '../Config/businessMenuItems.json';
+
+// Import all icons
 import dashboard from '../assets/Sidebar/dashboard.png';
 import clientmanagement from '../assets/Sidebar/cm.png';
 import dm from '../assets/Sidebar/Dm.png';
@@ -10,7 +14,7 @@ import pay from '../assets/Sidebar/pay.png';
 import rep from '../assets/Sidebar/rep.png';
 import Supp from '../assets/Sidebar/Supp.png';
 import set from '../assets/Sidebar/set.png';
-import logout from '../assets/Sidebar/logout.png';
+import logoutIcon from '../assets/Sidebar/logout.png';
 
 const iconMap = {
   dashboard,
@@ -22,21 +26,30 @@ const iconMap = {
   rep,
   Supp,
   set,
-  logout,
+  logout: logoutIcon,
 };
 
-const Sidebar = ({ onLogout }) => {
+const Sidebar = ({ onLogout, onSelectPage, sidebarType = 'default' }) => {
   const [activeItem, setActiveItem] = useState('Dashboard');
 
   const handleItemClick = (itemText) => {
     setActiveItem(itemText);
+    onSelectPage(itemText);
   };
+
+  // Correctly select menu items based on sidebarType
+  let menuItems = defaultMenuItems;
+  if (sidebarType === 'personal') {
+    menuItems = personalMenuItems;
+  } else if (sidebarType === 'business') {
+    menuItems = businessMenuItems;
+  }
 
   return (
     <aside className="sidebar">
       <nav>
         <ul>
-          {sidebarItems.map((item) => (
+          {menuItems.map((item) => (
             <li
               key={item.id}
               className={activeItem === item.text ? 'active' : ''}
@@ -52,8 +65,9 @@ const Sidebar = ({ onLogout }) => {
           ))}
         </ul>
       </nav>
-      <div className="logout" onClick={onLogout} style={{ cursor: 'pointer' }}>
-        <img src={logout} alt="Logout" className="sidebar-icon" />
+
+      <div className="logout" onClick={onLogout}>
+        <img src={logoutIcon} alt="Logout" className="sidebar-icon" />
         <span>Log out</span>
       </div>
     </aside>

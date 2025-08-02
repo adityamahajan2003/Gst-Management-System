@@ -1,0 +1,82 @@
+.security-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background: #f7f9fb;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* ✅ Updated selector: only password inputs inside .security-container */
+.security-container input[type="password"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.primary-btn {
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #6b21a8;
+}
+
+.two-factor-option {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.two-factor-option.selected {
+  border-color: #7c3aed;
+}
+
+.two-factor-option input[type="radio"] {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.option-title {
+  font-weight: 500;
+}
+
+.option-desc {
+  font-size: 12px;
+  color: #666;
+}

@@ -1,0 +1,33 @@
+.select-field-inline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.select-field-inline label {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.select-field-inline select {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: #F0EBFF;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.select-field-inline select:hover {
+  background-color: #9192FF; 
+  color: white; 
+}
+
+
+.select-field-inline select:focus {
+  outline: none;
+  border-color: #7e4bff; 
+}
+

@@ -1,4 +1,4 @@
-.logo{
+.logo {
   margin: 20px 0 0 20px;
 }
 
@@ -14,7 +14,6 @@
 
 .login-left,
 .login-right {
-  flex: 1;
   box-sizing: border-box;
   padding: 20px;
   min-width: 300px;
@@ -24,40 +23,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 50px;
+  flex: 1.2;
+  padding-right: 10px;
 }
 
 .illustration {
   width: 100%;
-  max-width: 550px;
+  max-width: 600px;
   height: auto;
   padding: 20px;
   border-radius: 10px;
 }
 
 .login-right {
+  flex: 1;
   max-width: 500px;
   width: 100%;
-  padding-right: 50px;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  background: #f7f7f7;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px 12px;
-}
-
-.input-group input {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 10px;
-  background: transparent;
-  font-size: 1em;
+  padding: 0 30px 0 50px;
 }
 
 .title {
@@ -78,22 +60,25 @@
 }
 
 .btn {
-  background-color: #8e44fd;
+  background: linear-gradient(135deg, #9a6aff, #7c3aed);
   color: white;
-  padding: 10px;
-  height: 60px;
+  padding: 12px 0;
+  height: 55px;
   max-width: 315px;
   width: 100%;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
 }
 
 .btn:hover {
-  background-color: #732dce;
+  background: linear-gradient(135deg, #7c3aed, #6b21a8);
+  transform: translateY(-2px);
 }
 
 .options {
@@ -108,24 +93,31 @@
   margin-top: 15px;
 }
 
+/* Responsive Styles */
 @media (max-width: 992px) {
   .login-container {
     flex-direction: column;
+    padding: 20px 10px;
   }
 
   .login-left,
   .login-right {
     max-width: 100%;
+    padding: 10px;
+  }
+
+  .login-left {
+    order: 1;
+  }
+
+  .login-right {
+    order: 2;
+    padding: 0 20px;
   }
 
   .illustration {
-    max-width: 400px;
-  }
-
-  .logo {
-    max-width: 150px;
-    top: 10px;
-    left: 10px;
+    max-width: 90%;
+    padding: 10px;
   }
 }
 
@@ -134,23 +126,13 @@
     padding: 10px;
   }
 
-  .login-left {
-    order: 2;
-  }
-
   .login-right {
-    order: 1;
     padding: 0 10px;
   }
 
   .btn {
     height: 50px;
     font-size: 1rem;
-  }
-
-  .input-group {
-    flex-direction: row;
-    padding: 8px;
   }
 
   .options {
@@ -160,13 +142,12 @@
   }
 
   .illustration {
-    max-width: 300px;
+    max-width: 100%;
     padding: 10px;
   }
 
   .logo {
     max-width: 120px;
-    top: 10px;
-    left: 10px;
+    margin-left: 10px;
   }
 }

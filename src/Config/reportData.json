@@ -1,0 +1,28 @@
+{
+  "overview": {
+    "gst": { "completed": 50, "pending": 20 },
+    "incomeTax": { "completed": 30, "pending": 10 }
+  },
+  "deadlines": {
+    "gst": ["Client 1 Gst Filing", "Client 2 Gst Filing"],
+    "it": ["Client 1 IT Filing", "Client 2 IT Filing"]
+  },
+  "filings": [
+    {
+      "name": "Shubham Sharma",
+      "type": "GSTR",
+      "total": 3,
+      "pending": 2,
+      "dueDate": "14 Jun 2024",
+      "status": "Pending"
+    },
+    {
+      "name": "Shubham Sharma",
+      "type": "ITR",
+      "total": 3,
+      "pending": 1,
+      "dueDate": "20 Jun 2024",
+      "status": "Completed"
+    }
+  ]
+}

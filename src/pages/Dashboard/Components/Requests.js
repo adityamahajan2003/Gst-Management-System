@@ -1,17 +1,10 @@
 import React from "react";
-import requests from "../../Config/Request.json";
+import requests from "../../../Config/Request.json";
 import "./Requests.css"; 
 
-const Requests = ({ goBack }) => {
+const Requests = () => {
   return (
     <div className="requests-container">
-      <div className="requests-header">
-        <button className="back-button" onClick={goBack}>
-          &lt; Back
-        </button>
-        <h2>Requests ({requests.length})</h2>
-      </div>
-
       <table className="requests-table">
         <thead>
           <tr>

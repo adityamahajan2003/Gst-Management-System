@@ -1,0 +1,52 @@
+.registration-select-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.registration-select-group label {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Common select base */
+.registration-select-group select {
+  border: none;
+  border-radius: 10px;
+  padding: 4px 14px;
+  font-size: 0.95rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  max-width: 120px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  outline: none;
+}
+
+/* Register as specific */
+.select-registeras {
+  background-color: #9192FF;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+.select-registeras:focus {
+  box-shadow: 0 0 0 2px #9192FF55;
+}
+
+/* State & Specialisation specific */
+.select-default {
+  background-color: #F0EBFF;
+  color: #333;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%237E4BFF' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+.select-default:focus {
+  box-shadow: 0 0 0 2px #7e4bff33;
+}
