@@ -1,0 +1,73 @@
+.logout-modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent; /* No full-page dimming */
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1rem;
+}
+
+.logout-modal {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.logout-modal h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.logout-modal h2 span {
+  font-weight: 600;
+  color: #333;
+}
+
+.logout-modal p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.logout-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cancel-button,
+.logout-button {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cancel-button {
+  background-color: white;
+  color: #7d4de7;
+  border: 1px solid #7d4de7;
+}
+
+.cancel-button:hover {
+  background-color: #f3edff;
+}
+
+.logout-button {
+  background-color: #7d4de7;
+  color: white;
+}
+
+.logout-button:hover {
+  background-color: #6835d0;
+}

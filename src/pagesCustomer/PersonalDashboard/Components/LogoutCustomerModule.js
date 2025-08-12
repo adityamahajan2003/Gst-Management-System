@@ -1,11 +1,13 @@
 import React from "react";
-import "./LogoutModal.css";
+import "./LogoutCustomerModule.css";
 
-const LogoutModal = ({ username = "@Adminxx", onCancel, onLogout }) => {
+const LogoutCustomerModule = ({ username, onCancel, onLogout }) => {
   return (
     <div className="logout-modal-overlay">
       <div className="logout-modal">
-        <h2>Log out of {username} ?</h2>
+        <h2>
+          Log out of <span>{username}</span> ?
+        </h2>
         <p>You will still be able to access the Dashboard</p>
         <div className="logout-buttons">
           <button className="cancel-button" onClick={onCancel}>
@@ -20,4 +22,4 @@ const LogoutModal = ({ username = "@Adminxx", onCancel, onLogout }) => {
   );
 };
 
-export default LogoutModal;
+export default LogoutCustomerModule;

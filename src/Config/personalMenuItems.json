@@ -16,7 +16,7 @@
   },
   {
     "id": 4,
-    "text": "Document",
+    "text": "Documents",
     "icon": "dm"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "id": 6,
-    "text": "Setting",
+    "text": "Settings",
     "icon": "set"
   }
 ]

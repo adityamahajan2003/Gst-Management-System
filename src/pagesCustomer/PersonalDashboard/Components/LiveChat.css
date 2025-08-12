@@ -1,0 +1,128 @@
+/* LiveChat.css */
+
+.livechat-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.livechat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #a962f7;
+  background-color: white;
+}
+
+.agent-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agent-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #a962f7;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.online-status {
+  font-size: 0.75rem;
+  color: gray;
+  margin-top: -6px;
+}
+
+.back-button,
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 1rem;
+  background: url('../../../assets/PersonalDashboard/chatbg.png') repeat;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.message.other {
+  align-self: flex-end;
+  background-color: #5a5555;
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.message.user {
+  align-self: flex-start;
+  background-color: #a962f7;
+  color: white;
+  border-top-left-radius: 0;
+}
+
+.time {
+  font-size: 0.7rem;
+  color: gray;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.user-time {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.chat-input-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-top: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+}
+
+.chat-input-area input {
+  flex: 1;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  background-color: #f5f3ff;
+  outline: none;
+}
+
+.input-icon {
+  color: #a962f7;
+}
+
+.action-icon {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #5a5555;
+}

@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.settings-customer-container {
+  font-family: 'Inter', sans-serif;
+  padding: 40px 60px;
+  background: #f7f9fc;
+  color: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-customer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.settings-customer-tabs {
+  display: flex;
+  margin-bottom: 2rem;
+  border: 1px solid #a962f7;
+  border-radius: 10px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.settings-customer-tab {
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #a962f7;
+  transition: background 0.3s, color 0.3s;
+  border-right: 1px solid #a962f7;
+}
+
+.settings-customer-tab:last-child {
+  border-right: none;
+}
+
+.settings-customer-tab.active {
+  background-color: #a962f7;
+  color: white;
+}
+
+.settings-customer-tab:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.settings-customer-tab:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Removed special styling for .logout */
+
+.settings-customer-profile-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.settings-customer-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.settings-customer-avatar-section {
+  text-align: center;
+}
+
+.settings-customer-avatar {
+  width: 80px;
+  height: 80px;
+  background: #d3d3d3;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.settings-customer-change-photo {
+  background: none;
+  border: none;
+  color: #6c63ff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.settings-customer-edit-btn {
+  margin-left: auto;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.settings-customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.settings-customer-form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.settings-customer-form input {
+  padding: 10px 14px;
+  border: 1px solid #a962f7;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.settings-customer-save-btn {
+  align-self: flex-end;
+  margin-top: 1rem;
+  background-color: #a962f7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}

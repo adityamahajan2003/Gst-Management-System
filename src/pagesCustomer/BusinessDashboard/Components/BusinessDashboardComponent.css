@@ -1,0 +1,101 @@
+.business-dashboard-content {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Header Banner */
+.business-header-banner {
+  background-color: #f3efff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 2.5rem;
+}
+
+.business-header-content {
+  flex: 1;
+}
+
+.business-header-content h2 {
+  font-size: 1.7rem;
+  color: #6a1b9a;
+  margin: 0 0 0.4rem;
+}
+
+.business-header-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.business-header-image {
+  position: absolute;
+  top: -30px;
+  right: -60px;
+}
+
+.business-header-image img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Dashboard Cards */
+.business-dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.business-dashboard-card {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+/* Charts Section */
+.business-dashboard-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.business-chart-card {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.business-deadline-card {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .business-header-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .business-header-image {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .business-dashboard-cards,
+  .business-dashboard-charts {
+    flex-direction: column;
+  }
+}

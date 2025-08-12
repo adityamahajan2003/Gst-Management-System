@@ -8,7 +8,7 @@ const PersonalDashboardComponent = () => {
       {/* Header Banner */}
       <div className="header-banner">
         <div className="header-content">
-          <h2>Welcome to Your Dashboard</h2>
+          <h2>Welcome Back</h2>
           <p>Here is a summary of your finances and upcoming tasks.</p>
         </div>
         <div className="header-image">

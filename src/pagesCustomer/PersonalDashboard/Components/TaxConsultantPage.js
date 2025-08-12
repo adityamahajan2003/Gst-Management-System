@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./TaxConsultantPage.css";
-import profileBanner from "../../../assets/PersonalDashboard/viewprofile.png";
 import profileImage from "../../../assets/PersonalDashboard/profileImg.png";
 import ConsultantProfile from "../../PersonalDashboard/Components/ConsultantProfile";
 import ConsultPage from "../../PersonalDashboard/Components/ConsultPage";
+import taxconsultant from "../../../assets/PersonalDashboard/taxconsultant.png"; // Correct image
 
 const TaxConsultantPage = () => {
   const [selectedConsultant, setSelectedConsultant] = useState(null);
@@ -53,7 +53,7 @@ const TaxConsultantPage = () => {
               <p>Find a trusted tax consultant to assist you.</p>
             </div>
             <img
-              src={profileBanner}
+              src={taxconsultant}
               alt="Tax Consultant Banner"
               className="tax-header-img"
             />

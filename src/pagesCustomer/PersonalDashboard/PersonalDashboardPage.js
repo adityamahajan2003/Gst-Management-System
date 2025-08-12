@@ -5,7 +5,10 @@ import Topbar from "../../components/Topbar";
 import PersonalDashboardComponent from "./Components/PersonalDashboardComponent";
 import IncomeTaxFilling from "./Components/IncomeTaxFilling";
 import TaxConsultantPage from "./Components/TaxConsultantPage";
+import Documents from "./Components/Documents";
+import Support from "./Components/Support";
 import "./PersonalDashboardPage.css";
+import SettingsCustomer from "./Components/SettingsCustomer";
 
 const PersonalDashboardPage = () => {
   const [currentPage, setCurrentPage] = useState("Dashboard");
@@ -24,6 +27,12 @@ const PersonalDashboardPage = () => {
         return <IncomeTaxFilling />;
       case "Tax Consultant":
         return <TaxConsultantPage />;
+      case "Documents":
+        return <Documents />;
+      case "Support":
+        return <Support />;
+      case "Settings":
+        return <SettingsCustomer />;
       default:
         return <PersonalDashboardComponent />;
     }

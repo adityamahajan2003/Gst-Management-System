@@ -1,0 +1,196 @@
+.documents-container {
+  padding: 30px;
+  background-color: #fdfdfd;
+  font-family: "poppins", sans-serif;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c2c2c;
+}
+
+/* Combined Top Bar for Filters + Actions */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Filter buttons styled like joined tabs */
+.filter-buttons {
+  display: inline-flex;
+  background-color: #efedeb;
+  padding: 4px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-tab {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #3b2f24;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.filter-tab.active {
+  font-weight: 700;
+}
+
+.filter-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background-color: #3b2f24;
+  border-radius: 1px;
+}
+
+/* Action buttons */
+.actions-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+.filter-btn,
+.export-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #858585;
+  border: 1px solid #858585;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #561f37;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Table Styles */
+.files-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-size: 15px;
+}
+
+.files-table thead th {
+  text-align: left;
+  background-color: #f7f7f7;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.files-table tbody tr {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.files-table td {
+  padding: 16px 20px;
+  font-size: 15px;
+  color: #333;
+  vertical-align: middle;
+}
+
+.filename-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-icon {
+  color: #6b44c1;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.sender-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-placeholder {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #d1d1d1;
+  flex-shrink: 0;
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions-bar {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

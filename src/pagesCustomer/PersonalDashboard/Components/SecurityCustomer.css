@@ -1,0 +1,89 @@
+.security-customer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+.security-customer-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.security-customer-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.security-customer-input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  background: #f9fafb;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.input-with-icon input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.icon-lock,
+.icon-eye {
+  cursor: pointer;
+}
+
+.security-customer-save-btn,
+.security-customer-proceed-btn {
+  background-color: #7d4de7;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.security-customer-save-btn:hover,
+.security-customer-proceed-btn:hover {
+  background-color: #6736d1;
+}
+
+.auth-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.auth-option.selected {
+  border-color: #7d4de7;
+  background-color: #f3f0fd;
+}
+
+.auth-option input[type="radio"] {
+  accent-color: #7d4de7;
+  margin-top: 0.3rem;
+}
